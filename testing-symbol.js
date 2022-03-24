@@ -41,4 +41,3 @@ console.log(Reflect.ownKeys(myObj))
         expect(task).to.have.all.keys('_id', 'name', 'status', 'date');
       });
     });
-  });

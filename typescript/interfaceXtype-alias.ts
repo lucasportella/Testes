@@ -1,0 +1,1 @@
+// https://betterprogramming.pub/interface-vs-type-alias-in-typescript-quick-comparison-9b356fae8389

@@ -5,10 +5,6 @@ let names: string[] = ["Mary Joe", "Alan Joe"]; // array de strings
 let car: [string, string, number] = ["Ford", "F400", 10]; // array de vários tipos
 
 // Type Aliases (apelidos de tipos) são utilizados para declarar a forma de um objeto nomeando o tipo, o que nos permite usar o mesmo tipo mais de uma vez e nos referir a ele através de um único nome. Um type alias é exatamente isso: um nome para qualquer tipo.
-type Point = {
-    x: number;
-    y: number;
-};
 
 type character = {
     nickname: string;
@@ -38,6 +34,11 @@ const characters: character[] = [
         createdAt: new Date('2003-10-15')
     },
 ]
+
+type Point = {
+    x: number;
+    y: number;
+};
 
 function printCoord(pt: Point) {
     console.log("O valor da coordenada x é: " + pt.x);
@@ -137,10 +138,10 @@ class Motorcycle {
 }
 
 const car1 = new Car('Fiat', Color.black, 4)
-console.log(car1.openTheDoor(Door.door3))
+console.log(car1.openTheDoor(Door.door3)) // output: Abrindo a porta 3.
 
 // Os Generics são modelos de código que você pode definir e reutilizar em toda a base de código, fornecem uma forma de informar a funções, classes ou interfaces que tipo você deseja usar ao chamá-las, além de nos ajudar a reduzir o uso do tipo any, que não é uma boa prática em TypeScript.
-// Ao invés de fazermos assim?
+// Ao invés de fazermos assim:
 function wrongGetArray(items : any[]) : any[] {
     return new Array().concat(items);
  }
@@ -177,7 +178,7 @@ interface ProcessIdentity<T, U> {
  let returnString2 = processor("Olá", 100); // Type check error: Argument of type "string" is not assignable to parameter of type "number".
  
  
- class ProcessIdentity<T, U> {
+ class ProcessIdentity2<T, U> {
     _value: T;
     _message: U;
     constructor(value: T, message: U) {
@@ -190,6 +191,27 @@ interface ProcessIdentity<T, U> {
     }
  }
   
- let processor2 = new ProcessIdentity<number, string>(100, "Olá");
- processor.getIdentity();  // imprime "Olá" e retorna 100
+ let processor2 = new ProcessIdentity2<number, string>(100, "Olá");
+ processor2.getIdentity();  // imprime "Olá" e retorna 100
  
+
+
+// generic com callback(callback com argumentos opcionais)
+type CallBack<T> = (elem: T, index?: number, arr?: T[]) => boolean
+
+const myFilter =  <T> (arr: T[], myCallBack: CallBack<T>): T[] => {
+    const filteredArray = []
+    for (let i = 0; i < arr.length; i += 1) {
+        const check = myCallBack(arr[i], i, arr)
+        if (check) {
+            filteredArray.push(arr[i])
+        }
+    }
+    return filteredArray
+}
+
+const myArray = [2,3,4,5,6,7,8,9]
+const callback1 = (elem: number): boolean => elem % 2 === 0; 
+
+
+console.log(myFilter<number>(myArray,callback1));

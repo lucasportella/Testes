@@ -25,8 +25,8 @@ enum weekDays {
 }
 
 
-console.log(weekDays["friday"])
-console.log(weekDays["saturday"])
+console.log(weekDays["friday"]) // friday
+console.log(weekDays["saturday"]) // 7
 
 enum Months {
     January = 1,
@@ -43,8 +43,8 @@ enum Months {
     December
 }
 
-console.log(Months["February"])
-console.log(Months["December"]);
+console.log(Months["February"]); // 2
+console.log(Months["December"]); // 12
 
 enum Seasons {
     Fall = "Fall",

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- with box-sizing: border-box, the div still has a total 300x300 pixels, even with margin, border and padding, when u add margin, border and padding to the div the width e height is reduced so the total size of the div remains 300x300, the width height now is 260x260 -->
+    <!-- the default value is content-box, which preserves the width and height of the element, padding and margin will increase the total size -->
+    <style>
+        div {
+            margin: 10px;
+            padding: 15px;
+            border: solid black 5px;
+            box-sizing:border-box;
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+        }
+        /* you can initialize your css with a config like this(Otavio Miranda does this): */
+        * {
+            box-sizing:border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        /* the * config doesn't change the div style cause its more generic */
+    </style>
+</head>
+<body>
+    <div>Hello!</div>
+</body>
+</html>

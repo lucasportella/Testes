@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table thead th, table tbody tr td, table tfoot tr td {
+            border: solid black 1px;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            /* collapses borders, making the table prettier, default is separate */
+        }
+    </style>
+</head>
+<body>
+    <!-- table with td occupying 3 columns -->
+    <!-- table with  td occupying 3 tds from 1 column-->
+    <table>
+        <thead>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td colspan="3">Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

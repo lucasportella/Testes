@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table thead th, table tbody tr td, table tfoot tr td {
+            border: solid black 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- table with td occupying 3 columns and 3 rows, add <td> tags in the missing spots(commented places) to see how the colspan and rowspan distort the table -->
+    <table>
+        <thead>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+            <tr>
+                <td colspan="3" rowspan="3">Content</td>
+                <!-- occupied by the rowspan -->
+                <!-- occupied by the rowspan -->
+            </tr>
+            <tr>
+                <!-- occupied by the colspan  -->
+                <!-- occupied by the colspan  -->
+                <!-- occupied by the colspan  -->
+            </tr>
+            <tr>
+                <!-- occupied by the colspan-->
+                <!-- occupied by the colspan-->
+                <!-- occupied by the colspan-->
+            </tr>
+            <tr>
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+                <td>Footer Content</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

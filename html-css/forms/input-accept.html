@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- accept attribute can only be used with input type="file" attribute -->
+    <!-- the input accept attribute can accept validate the input checking by file extension .png e.g. or by mime type like image/ or video/ -->
+    <!-- to check more of mime types https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types -->
+    <!-- warning: this validation is weak and does not replace server validation -->
+    <!-- in nautilus file explorer, this validation makes invalid files invisible, u can accept all files by using the * property or by omitting accept attribute -->
+    <input type="file" accept=".png, .svg, image/*">
+</body>
+</html>

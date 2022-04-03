@@ -1,0 +1,23 @@
+/* selects more than 1 element: */
+div, p {
+    color: red
+}
+
+.class2, .class3 {
+    color: blue
+}
+
+.class1, p {
+    color: aqua
+}
+
+/* selects nested child: */
+/* only .class3 will have background changed */
+.class1 .class2 .class3 {
+    background-color: blueviolet;
+}
+
+/* selects only with element has this 2 classes at the same time, but it can have more classes, though: */
+.class1.class2 {
+    background-color: aquamarine;
+}

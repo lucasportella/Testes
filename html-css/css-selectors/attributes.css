@@ -1,0 +1,36 @@
+/* RELOAD PAGE BEFORE TESTING */
+
+[attribute1] {
+    color: red
+}
+
+/* only exact match "value2" */
+[attribute1="value2"] {
+    border: solid 5px orange;
+}
+
+/* if element has many values: */
+/* in our example the div has attribute1 and both value1 and value2, it just needs to have "value2" separated by spaces and match will occur(value1 value2) will match but (value1 value2-value3) will not match */
+[attribute1~="value2"] {
+    background-color: blueviolet;
+}
+
+/* we can select the element which holds the attribute as well: */
+div[attribute1~="value2"] {
+    background-color: blueviolet;
+}
+
+/* to match (value1 value2-value3) use operator *, which requires the string to only contains, doesn't need to be separated by spaces: */
+[attribute1*="value2"] {
+    background-color: blueviolet;
+}
+
+/* to match beginning of string: */
+[attribute1^="beg"] {
+    color: rgb(44, 76, 57);
+}
+
+/* to match ending of string: */
+[attribute1$="ing"] {
+    text-decoration: underline;
+}

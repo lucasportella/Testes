@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* first, set the rules of the animation through @keyframes property: */
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      /* 0 to 360 will make a full rotation */
+      /* then select the element and use rotate and time properties, and infinite if you want it forever */
+      img {
+          animation: rotate 3s infinite;
+      }
+
+    </style>
+  </head>
+  <body>
+      <img width="300" src="./dog.jpeg" alt="dog">
+  </body>
+</html>

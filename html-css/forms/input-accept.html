@@ -13,5 +13,6 @@
     <!-- warning: this validation is weak and does not replace server validation -->
     <!-- in nautilus file explorer, this validation makes invalid files invisible, u can accept all files by using the * property or by omitting accept attribute -->
     <input type="file" accept=".png, .svg, image/*">
+    <!-- the * after image/ means we are accepting any type of subtype of image, which means jpeg, svg, hence making the .png, .svg, part redundant -->
 </body>
 </html>

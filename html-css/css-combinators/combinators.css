@@ -1,0 +1,51 @@
+/* there are 4 css combinators: */
+
+
+/* 1: DESCENDANT SELECTOR: */
+/* this will match all classes class1-1-1 that are descendant of class1-1, which means .class1-1 relationship can be omitted here */
+.class1 .class1-1-1 {
+    background-color: red;
+}
+
+/* 2: CHILD SELECTOR: */
+/* this will only match for .class2-2-2 if .class2-2 is designed here, because the selector needs a children to match, grandchildren will fail, remove .class2-2 to see background blue not being applied anymore */
+.class2 > .class2-2 > .class2-2-2 {
+    background-color: blue;
+}
+
+/* 3: ADJACENT SIBLING SELECTOR: */
+/* siblings must have the same parent  and come immediately after each other */
+/* this combination will match for brother2: */
+.brother1 + .brother2{
+    background-color: green;
+}
+
+/* this combination will fail, brother1 comes BEFORE brother2 */
+.brother2 + .brother1{
+    background-color: green;
+}
+
+/* this combination will also fail, brother3 is NOT immediately after brother1 */
+.brother1 + .brother3{
+    background-color: green;
+}
+
+/* this combination will succeed: */
+.brother3 + .brother4{
+    background-color: green;
+}
+.class3 + .brother1 {
+    background-color: violet;
+}
+
+/* if you want to match only brother1, you can use > selector with :nth-child(1): */
+.class3 > .brother1:nth-child(1) {
+    background-color: violet;
+}
+
+/* 4: GENERAL SIBLING SELECTOR: */
+/* select all brothers of an element, in this case it will select all .class4-brother-type1 that are brothers from class4, class4 will not be selected, children of class4-brother-type1 will inherit the father's class*/
+/* the brothers doesn't need to be immediately after, but only after, cannot be before */
+.class4 ~ .class4-brother-type1 {
+    color: red;
+}

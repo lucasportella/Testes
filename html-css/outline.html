@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out". */
+        /* used by browsers default css to give focus on clicked html elements like inputs - focus indicators */
+        /* Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline. */
+        .div1 {
+            background-color: bisque;
+            width: 300px;
+            height: 300px;
+            /* box model properties: */
+            margin: 50px; /* invisible */
+            outline: solid red 10px; /* outline is NOT part of the box model properties */
+            border: solid blue 5px;
+            padding: 30px /* same color of background-color */
+
+        }
+
+        /* you can see div2 outline overflows div1 area, that's the outline behavior. If you give a lot of pixels to border por margin v.g, the area of other elements will be respected */
+        .div2 {
+            border: solid blue 5px;
+            outline: solid red 100px;
+            padding: 30px
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eos, est ad iure porro perferendis dolore id a nostrum officia fugiat facilis expedita aut velit, dignissimos omnis voluptatum! Quod, minima.
+    </div>
+    <div class="div2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eos, est ad iure porro perferendis dolore id a nostrum officia fugiat facilis expedita aut velit, dignissimos omnis voluptatum! Quod, minima.
+    </div>
+</body>
+</html>

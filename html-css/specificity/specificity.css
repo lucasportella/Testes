@@ -1,0 +1,57 @@
+/* COMMENT TO SEE DIFFERENCES BETWEEN HIERARCHIES */
+
+
+/* 1 - !IMPORTANT: */
+* {
+    background-color: red !important 
+    /* NEVER DO THIS, LOL - it will override even inline-styles */
+}
+
+
+/* 2 - INLINE STYLE: */
+/* IN THE SECOND PLACE IS THE INLINE STYLE, SO CHECK THE HTML FILE AND COMMENT THAT LINE */
+
+
+
+/* 3 - ID: */
+#parag {
+    background-color: yellow;
+}
+
+
+/* 4 - PSEUDO-CLASS */
+p:hover {
+    background-color: blue;
+}
+/* be aware that :not is not considered a pseudo-class in the specification calculation. However, selectors inside the :not() are considered normal selectors */
+
+
+/* 5 - CLASS and ATTRIBUTE SELECTOR */
+/* ---------------DRAW--------------------- */
+.parag {
+    background-color: green;
+}
+[attribute1="value1"] { /* it could be just [attribute1], points would be the same */
+    background-color: blueviolet;
+}
+/* in draw scenarios, the last value wins, so blueviolet overrides green */
+/* --------------------------------------- */
+
+
+/* 6 - PSEUDO-ELEMENTS: */
+p::after {
+   background-color: brown; 
+}
+/* nothing is after the paragraph, so we will never see brown color */
+
+
+/* 7 - TYPE SELECTORS: */
+p {
+    background-color: gray;
+}
+
+
+/* 8 - UNIVERSAL SELECTORS: */
+* {
+    background-color: pink;
+}

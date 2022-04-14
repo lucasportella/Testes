@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* selects the first p child of it's parents(body in this case) */
+      .class1:first-child {
+        color: red;
+      }
+      /* last-child doesn't work if it is the last child of body when used if live server extension, because there is in the end of the body the <script> tag used by live server extension */
+      .class1:last-child {
+        color: blue;
+      }
+
+      .class2:nth-child(odd) {
+          color: yellow;
+      }
+      .class2:nth-child(even) {
+          color: green;
+      }
+      /* NTH-CHILD INDEXED STARTS FROM 1 NOT 0 */
+      .class3:nth-child(5) {
+          color:purple
+      }
+      /* starts from 3 */
+      .class4:nth-child(n+3) {
+          color: brown;
+      }
+      /* steps betweem 3 amd 3 */
+      .class5:nth-child(3n) {
+          color:aquamarine
+      }
+    /* starts from 4, and steps between 2 and 2 */
+      .class6:nth-child(2n+4) {
+          color: pink
+      }
+      /* formal notation is <An+B> cannot change order */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+        <p class="class2">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+        <p class="class3">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+        <p class="class4">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+        <p class="class5">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+        <p class="class6">Hi!</p>
+    </div>
+  </body>
+</html>

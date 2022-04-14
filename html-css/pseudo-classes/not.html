@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* all tags p that do NOT have class class1 will receive the following style */
+        p:not(.class1) {
+            color: blue;
+        }
+        /* complex logic: if input is not checked, the span receives violet, if input is checked, input receives no style */
+        input:not(input:checked) + span {
+            background-color: violet;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p>Hi!</p>
+      <p class="class2">Hi!</p>
+      <p class="class2">Hi!</p>
+      <p class="class1">Hi!</p>
+      <p class="class1">Hi!</p>
+    </div>
+    <hr>
+    <div>
+        <input type="checkbox" />
+        <span> Immediate sibling of input checkbox</span>
+    </div>
+  </body>
+</html>

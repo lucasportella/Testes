@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* styles on hover */
+        p:hover {
+            background-color: aqua;
+        }
+        /* styles when clicking(must keep pressing) */
+        div:active {
+            background-color: red;
+        }
+        /* styles when selected */
+        input:focus {
+            background-color: blue;
+        }
+        input:required {
+            width: 50px;
+        }
+
+        button:disabled {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, libero fugiat eaque labore est recusandae iure debitis dicta quam hic, fuga error. Recusandae ea, tempora autem itaque assumenda quod exercitationem?
+    </p>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto in laudantium dolor repudiandae! Ut ab delectus quis corporis cum, adipisci enim aut, ratione at harum minima tempore, necessitatibus provident recusandae.</div>
+    <input />
+    <input />
+    <input />
+    <input type="checkbox" required>
+    <button disabled>My style is because i'm disabled</button>
+    <button>I don't have a style because i'm not disabled</button>
+</body>
+</html>

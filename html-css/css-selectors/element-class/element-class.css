@@ -17,7 +17,7 @@ div, p {
     background-color: blueviolet;
 }
 
-/* selects only with element has this 2 classes at the same time, but it can have more classes, though: */
+/* selects only if element has this 2 classes at the same time, but it can have more classes, though: */
 .class1.class2 {
     background-color: aquamarine;
 }

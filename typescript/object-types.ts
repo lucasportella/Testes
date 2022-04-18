@@ -58,6 +58,7 @@ function retornarCPF(cpf: number | string) {
 
 
 // enum é com = (igual)
+// prefer union types over enums
 enum Color {
     black = "black",
     white = "white",

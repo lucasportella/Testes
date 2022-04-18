@@ -1,3 +1,7 @@
+// ENUMS HAVE SOME DOCUMENTED PROBLEMS, PREFER UNION TYPES, SEE MORE AT
+// https://fettblog.eu/tidy-typescript-avoid-enums/
+
+
 enum StatusCodes {
     OK = 200,
     BadRequest = 400,

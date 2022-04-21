@@ -1,0 +1,1 @@
+https://blog.logrocket.com/css-inheritance-inherit-initial-unset-and-revert/#initial

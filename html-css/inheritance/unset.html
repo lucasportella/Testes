@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: aqua;
+        }
+        p {
+            color: green;
+        }
+        /* <p> inherits body color, but since <p> has a specific color designed for him, that color overrides inheritance */
+        /* BUT the unset value is capable to revert this: */
+        p {
+            color: unset
+        }
+        /* the unset is capable of resetting the value to its inherited value IF it is a inherited property */
+        /* if it is not a inherited property, the unset resets the value to the initial value: */
+        div {
+            display: unset
+        }
+        /* now all divs behave like the initial value for displays, which is inline */
+        /* resume of unset: */
+        /* inherit property: resets to inherit */
+        /* non inherit property: resets to initial */
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus cum numquam ipsa unde repudiandae expedita consectetur, odio doloribus commodi? Provident illo atque eos suscipit odit laboriosam, repellat quas assumenda perferendis.</p>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsum natus ut magni earum quos tempora, unde distinctio suscipit numquam. Autem eos distinctio totam tenetur expedita placeat? Non, laboriosam in?</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsum natus ut magni earum quos tempora, unde distinctio suscipit numquam. Autem eos distinctio totam tenetur expedita placeat? Non, laboriosam in?</div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ipsum natus ut magni earum quos tempora, unde distinctio suscipit numquam. Autem eos distinctio totam tenetur expedita placeat? Non, laboriosam in?</div>
+</body>
+</html>

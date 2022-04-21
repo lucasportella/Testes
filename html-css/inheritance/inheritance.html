@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color:aqua
+        }
+        div {
+            color: initial;
+            display: initial;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p> inherits body style -->
+    <!-- most properties are not capable of inheritance, color and fonts are -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quae qui fuga molestias nihil provident odio! Blanditiis, tempora. Quisquam perspiciatis unde nobis commodi quae non fugiat quo dolore, earum molestiae.</p>
+    <!-- <div> will not inherit the color of the body because initial property guarantee the element will have the initial value of the color property(which is black) -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, commodi vero. Exercitationem magnam aperiam voluptatum assumenda eum beatae, ut voluptatem cupiditate est sunt necessitatibus ullam quo odit, at deserunt? Atque.
+    </div>
+    <!-- but do not be fooled, the default value of a div display is block, if we set it to initial, it will become inline, that's because the initial's reference is not from the html element but from the css property, and the initial value for the display property, regardless of the html element we are using, is inline -->
+    <!-- display initial in all these divs makes them stick all together in the same line -->
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, commodi vero. Exercitationem magnam aperiam voluptatum assumenda eum beatae, ut voluptatem cupiditate est sunt necessitatibus ullam quo odit, at deserunt? Atque.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, commodi vero. Exercitationem magnam aperiam voluptatum assumenda eum beatae, ut voluptatem cupiditate est sunt necessitatibus ullam quo odit, at deserunt? Atque.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, commodi vero. Exercitationem magnam aperiam voluptatum assumenda eum beatae, ut voluptatem cupiditate est sunt necessitatibus ullam quo odit, at deserunt? Atque.
+    </div>
+</body>
+</html>

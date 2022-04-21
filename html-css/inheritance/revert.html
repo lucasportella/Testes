@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+        }
+        /* there are 3 layers of styles here: */
+        /* 1- the CSS default style for a div, the initial value, which is inline */
+        /* 2- the browser default style for a div, which is block, and it overrides the default CSS */
+        /* 3- my own css here, which is flex, and overrides the browser default */
+        /* the revert value will revert the value to the browser default, unlike unset does with non inherit values (it reverts to the CSS default): */
+        div {
+            display: revert
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vitae officiis aperiam autem repudiandae mollitia quod incidunt iusto maxime velit quis fugiat atque laudantium sint necessitatibus hic accusantium, officia recusandae?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vitae officiis aperiam autem repudiandae mollitia quod incidunt iusto maxime velit quis fugiat atque laudantium sint necessitatibus hic accusantium, officia recusandae?</p>
+    </div>
+</body>
+</html>

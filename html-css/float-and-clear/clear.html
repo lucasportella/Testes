@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* clear property specifies if floating elements can be at his side or they should be moved down him(clear). The element in which is applied the clear property does not require to be float. */
+
+      /* uncomment 'clear: both' to see the effect both right and left at the same time */
+
+      /* some observations are worth commenting: */
+
+      /* div-father height wont exist if all children are float */
+      
+      /* the order of each div here is crucial for the clear effect work as desired. If the clear-both-div came before the float-right div, the effect wouldn't work for the right side. That's because the float-right div would be already out-of-reach the clear-both-div, since it would come after, it would have not been "contaminated" by clear-both-div's content, which uses any free space available(uses the upper middle space and everything below) */
+
+
+      .div-father {
+        background-color: antiquewhite;
+      }
+      .float-left {
+        border: gold solid 2px;
+        margin: 5px;
+        float: left;
+      }
+      .clear-both-div {
+        border: gold solid 2px;
+        margin: 5px;
+        /* clear: both; */
+      }
+      .float-right {
+        border: gold solid 2px;
+        margin: 5px;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-father">
+      <div class="float-left">
+        FLOAT LEFT DIV FLOAT LEFT DIV
+      </div>
+      <div class="float-right">
+        FLOAT RIGHT DIV FLOAT RIGHT DIV
+      </div>
+      <div class="clear-both-div">
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div clear-both-div clear-both-div clear-both-div
+        clear-both-div
+      </div>
+    </div>
+  </body>
+</html>

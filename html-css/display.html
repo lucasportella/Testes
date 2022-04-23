@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* default display is block, change to inline and to inline-block to see the differences */
+        div {
+            background-color: beige;
+            margin: 10px;
+            border: solid black 2px;
+            display: inline-block;
+        }
+        .div1 {
+            height: 100px;
+        }
+        /* block: doesn't care about content, will always occupy 100% of the width */
+       
+        /* inline: it cares about the content, so width changes along with context size, will join all elements together in the same line if possible. Doesn't care about height*/
+
+        /* inline-block: it cares about the content and will obey height and width properties. This means it will try to put all blocks at the same line if possible, but will respect a height property that differs from the content */
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      Lorem ipsum dolor sit,
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rerum
+      optio ut a distinctio dolorem, pariatur sit ipsam perferendis quia
+      possimus
+    </div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rerum
+      optio ut a distinctio dolorem, pariatur sit ipsam perferendis quia
+      possimus! Nulla dignissimos veritatis obcaecati, in deserunt ullam
+      incidunt maiores.
+    </div>
+  </body>
+</html>

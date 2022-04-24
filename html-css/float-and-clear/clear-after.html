@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- using pseudo-element ::after to clear anything that comes after floating elements -->
+    <style>
+      .child {
+        border: gold solid 2px;
+        float: left;
+        margin: 5px;
+        width: 300px;
+        height: 300px;
+      }
+      .father {
+        background-color: aquamarine;
+      }
+      .father::after {
+        /* content(can be empty) and display block are mandatory to work, comment any of these lines to see clear both not working */
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      /* father div only has height because of the ::after css, it forces the father to have an element that is not float and with display block and clearing all floats it will  regain all his height */
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="child">FIRST DIV</div>
+      <div class="child">SECOND DIV</div>
+      <div class="child">THIRD DIV</div>
+      <div class="child">FOURTH DIV</div>
+    </div>
+    <p>
+        <strong>Me and the elements below are after the class father</strong>
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sint
+      ratione placeat odio consequuntur aliquid eum tempore reiciendis. Itaque
+      repellendus aspernatur blanditiis voluptates porro amet quia sint sed,
+      animi autem.
+    </p>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde sint
+      ratione placeat odio consequuntur aliquid eum tempore reiciendis. Itaque
+      repellendus aspernatur blanditiis voluptates porro amet quia sint sed,
+      animi autem.
+    </div>
+  </body>
+</html>

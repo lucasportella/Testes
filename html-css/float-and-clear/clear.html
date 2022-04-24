@@ -12,7 +12,7 @@
 
       /* some observations are worth commenting: */
 
-      /* div-father height wont exist if all children are float */
+      /* div-father height wont exist if all children are float, that's because float elements don't count height, in this case it will exist because clear-both-div is not float */
       
       /* the order of each div here is crucial for the clear effect work as desired. If the clear-both-div came before the float-right div, the effect wouldn't work for the right side. That's because the float-right div would be already out-of-reach the clear-both-div, since it would come after, it would have not been "contaminated" by clear-both-div's content, which uses any free space available(uses the upper middle space and everything below) */
 

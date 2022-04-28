@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        } 
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            height: 100vh;
+        }
+    </style>
+  </head>
+  <!-- you can control anchor visited and not visited links colors with pseudo-classes(see the visited-links html file) or you can set the colors in the body tag: -->
+  <body link="purple" alink="#FFFF00" vlink="#FF00FF">
+      <!-- the href property can be used to navigate through your own page, just reference the ids. -->
+      <!-- You can use href="#top" or href="#" to link to the top of the current page. -->
+      <!-- scroll-behavior: smooth is being used here to give a more natural effect, default is auto -->
+      <a href="#1">Link to first section</a>
+      <a href="#2">Link to second section</a>
+      <a href="#3">Link to third section</a>
+    <section id="1" style="background-color: rgb(95, 95, 176);">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt officia, accusamus corrupti vitae ullam fuga eum accusantium nobis? Officiis dolorem fugiat vitae exercitationem sed inventore quis numquam tempore earum.</p>
+    </section>
+    <section id="2" style="background-color: rgb(116, 59, 118);">
+        <a href="#top">Top</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt officia, accusamus corrupti vitae ullam fuga eum accusantium nobis? Officiis dolorem fugiat vitae exercitationem sed inventore quis numquam tempore earum.</p>
+    </section>
+    <section id="3" style="background-color: rgb(48, 71, 48);">
+        <a href="#">Top</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt officia, accusamus corrupti vitae ullam fuga eum accusantium nobis? Officiis dolorem fugiat vitae exercitationem sed inventore quis numquam tempore earum.</p>
+    </section>
+  </body>
+</html>

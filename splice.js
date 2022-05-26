@@ -9,4 +9,4 @@ myArray.splice(1, 1, 'b', 'c')
 console.log(myArray); // [ 1, 'b', 3 ]
 
 myArray.splice(2,1,'d')
-console.log(myArray) // [ 1, 'b', 'c' ]
+console.log(myArray) // [ 1, 'b', 'c' ] 

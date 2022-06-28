@@ -24,7 +24,7 @@ console.log(Reflect.ownKeys(myObj))
 
 // https://medium.com/intrinsic-blog/javascript-symbols-but-why-6b02768f4a5c
 
-// testing with mongo(mocha chai test objectId from mongo):
+// testing with mongo (mocha chai test objectId from mongo):
 
     it('successfully gets all tasks', async () => {
       db.collection('tasks').insertMany(data);

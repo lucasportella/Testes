@@ -1,0 +1,39 @@
+.grid {
+  background-color: rgb(61, 58, 58);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  grid-template-areas: 
+  "a a b c"
+  "a a d d"
+  "e e d d";
+}
+
+.grid > div:nth-child(1) {
+  grid-area: a;
+  background-color: rgb(44, 41, 38);
+}
+
+.grid > div:nth-child(2) {
+grid-area: b;
+  background-color: rgb(110, 78, 46);
+}
+
+.grid > div:nth-child(3) {
+  grid-area: c;
+  background-color: rgb(110, 78, 46);
+}
+
+.grid > div:nth-child(4) {
+grid-area: e;
+  background-color: rgb(31, 86, 46);
+}
+
+.grid > div:nth-child(5) {
+grid-area: d;
+  background-color: rgb(118, 29, 117);
+
+}

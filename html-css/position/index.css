@@ -1,0 +1,25 @@
+#r1 {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(63, 109, 150);
+  position: relative;
+  z-index: 1;
+  top: 100px;
+}
+
+#n1 {
+  z-index: 2;
+  width: 400px;
+  height: 200px;
+  position: relative;
+  background-color: rgb(144, 105, 57);
+}
+
+#r2 {
+  z-index: 3;
+  width: 200px;
+  position: relative;
+  height: 200px;
+  bottom: 50px;
+  background-color: rgb(177, 115, 35);
+}

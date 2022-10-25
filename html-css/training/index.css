@@ -94,3 +94,13 @@ article:nth-child(10) {
   grid-column: 5/6;
   grid-row: 5/6;
 }
+
+p:nth-child(15) {
+  grid-column: 4/5;
+  grid-row: 5/6;
+}
+
+p:nth-child(16) {
+  grid-column: 6/7;
+  grid-row: 5/6;
+}

@@ -1,0 +1,119 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 5vh;
+}
+
+header > div {
+  display: flex;
+  padding: 5px;
+}
+
+header > div > span {
+  padding: 5px;
+}
+
+
+main {
+  display: grid;
+  grid-template-areas:
+  "a a b b c c"
+  "a a b b c c"
+  "d d e f g h"
+  "d d i j k l"
+  "z z m n o p";
+  gap: 1rem;
+  margin: 1rem;
+  height: 80vh;
+/* z z just used to fill the spaces */
+}
+
+main > section {
+
+background-color: rgb(107, 107, 117);
+}
+
+section:nth-child(1) {
+  grid-area: a;
+}
+
+section:nth-child(2) {
+  grid-area: b;
+}
+section:nth-child(3) {
+  grid-area: c;
+}
+
+main > div {
+  /* this div respect the size of the grid */
+  grid-area: d;
+  background-color: blue;
+}
+
+main > div > aside {
+  /* this aside does not respect the size of the grid, so it has the power to overflow it's parent div grid size, but since his parent div is respecting the size of the grid, this overflow will not interfere with the size of the rest of the grid items. Without the div, the aside will always respect the 2fr size and its grid siblings will distort to occupy 2fr as well  */
+  /* DOES NOT WORK WITH GRID AREA */
+
+  border: solid black 3px;
+}
+
+article {
+  background-color: rgb(38, 120, 97);
+}
+
+article:nth-child(5) {
+  grid-area: e;
+}
+
+p:nth-child(6) {
+  grid-area: f;
+}
+
+article:nth-child(7) {
+  grid-area: g;
+  
+}
+
+p:nth-child(8) {
+  grid-area: h;
+}
+
+article:nth-child(9) {
+  grid-area: i;
+}
+
+p:nth-child(10) {
+  grid-area: j;
+}
+
+article:nth-child(11) {
+  grid-area: k;
+}
+
+p:nth-child(12) {
+  grid-area: l;
+}
+
+article:nth-child(13) {
+  grid-area: m;
+}
+
+p:nth-child(14) {
+  grid-area: n;
+}
+
+article:nth-child(15) {
+  grid-area: o;
+}
+
+p:nth-child(16) {
+  grid-area: p;
+}

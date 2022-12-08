@@ -10,5 +10,4 @@ console.log(myArray); // [ 1, 'b', 3 ]
 
 myArray.splice(2,1,'d')
 console.log(myArray) // [ 1, 'b', 'c' ] 
-// test1 old pc
-// test1 vostro
+

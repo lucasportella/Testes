@@ -1,3 +1,7 @@
+body {
+  margin: 50px;
+  padding: 0;
+}
 .grad {
 animation: gradient 10s ease infinite;
 width: 100vh;
@@ -20,4 +24,30 @@ background-size: 200% 200%;
   100% {
     background-position: 0% 50%;
   }
+}
+
+@keyframes bouncing {
+  to {
+    transform: translateY(30px)
+  }
+}
+
+.arrow {
+  animation: bouncing 1s ease infinite alternate;
+}
+
+.arrow-shaft {
+  width: 20px;
+  height: 80px;
+  background: black;
+  margin-left: 40px;
+}
+
+.arrow-head {
+  width: 0;
+  height: 0;
+  border-top: 50px solid black;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent
 }

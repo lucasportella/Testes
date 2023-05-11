@@ -1,5 +1,7 @@
+/* GRADIENT: */
+
 body {
-  margin: 50px;
+  margin: 0px;
   padding: 0;
 }
 .grad {
@@ -26,6 +28,12 @@ background-size: 200% 200%;
   }
 }
 
+
+
+
+
+/* ARROW: */
+
 @keyframes bouncing {
   to {
     transform: translateY(30px)
@@ -51,3 +59,45 @@ background-size: 200% 200%;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent
 }
+
+
+
+
+/* TEXT REVEAL: */
+
+.text-reveal {
+  width: 100vw;
+  height: 300px;
+  display: grid;
+  place-items: center;
+}
+
+.block {
+  width: 40vw;
+  height: 200px;
+  background-color: blue;
+  animation: move 3s both linear;
+}
+
+.text {
+  position: absolute;
+  opacity: 0;
+  animation: fade 1s linear 1s forwards;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%)
+  }
+
+  to {
+    transform: translateX(100vw)
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+

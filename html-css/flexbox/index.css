@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  background-color: blueviolet;
+  height: 700px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content:normal;
+}
+
+.item {
+  background-color: blue;
+  padding: 2rem;
+  margin: 2rem;
+}

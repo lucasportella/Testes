@@ -30,4 +30,4 @@ if (Boolean('') === false) {
 
 // so the definition:
 // truthy is is a value that was evaluated as true after the boolean conversion process
-// falsy is a value that was evaluated as false, after the boolean conversion process
+// falsy is a value that was evaluated as false, after the boolean conversion process 

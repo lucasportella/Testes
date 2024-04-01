@@ -1,4 +1,4 @@
-const myArray = [1,2,3]
+const myArray = [1, 2, 3]
 // Syntax
 // splice(start)
 // splice(start, deleteOrChangeCount)
@@ -8,7 +8,7 @@ const myArray = [1,2,3]
 myArray.splice(1, 1, 'b', 'c')
 console.log(myArray); // [ 1, 'b', 3 ]
 
-myArray.splice(2,1,'d')
+myArray.splice(2, 1, 'd')
 console.log(myArray) // [ 1, 'b', 'c' ] 
 
-// test6
+// test7
